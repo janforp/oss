@@ -13,8 +13,10 @@ public class Config {
     private static String accessKeySecret;
     private static String region;
     private static String bucketName;
+    private static String endPoint;
+    private static String baseUrl;
 
-    public String getAccessKeyId() {
+    public static String getAccessKeyId() {
         return accessKeyId;
     }
 
@@ -44,5 +46,21 @@ public class Config {
 
     public void setBucketName(String bucketName) {
         this.bucketName = bucketName;
+    }
+
+    public static String getEndPoint() {
+        return endPoint;
+    }
+
+    public static void setEndPoint(String endPoint) {
+        Config.endPoint = endPoint;
+    }
+
+    public static String getBaseUrl() {
+        return baseUrl;
+    }
+
+    public static void setBaseUrl(String baseUrl) {
+        Config.baseUrl = baseUrl;
     }
 }
